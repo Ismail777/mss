@@ -7,7 +7,7 @@
   <div class="row  m-t-10">
 
     <section class="content-header">
-      <h1 class="col-md-4">Manage Roles</h1>
+      <h1 class="col-md-4">Manage Permissions</h1>
       <div class="pull-right col-md-4">
         {{ Breadcrumbs::render('roles') }}
       </div>

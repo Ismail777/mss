@@ -4,10 +4,6 @@
 </head>
 @section('content')
 
-  <ol class="breadcrumb pull-right">
-    <li class="active">Dashboard</li>
-  </ol>
-
   <!-- Small boxes (Stat box) -->
   <div class="row m-t-50 m-b-20">
     <div class="col-lg-3 col-xs-6">

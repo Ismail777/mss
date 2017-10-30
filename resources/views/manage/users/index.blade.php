@@ -16,7 +16,9 @@
 
     <div class="row">
 
+      <div class="col-sm-12">
         <a href="{{route('users.create')}}" class="btn btn-primary btn-lg pull-right"><i class="fa fa-user-plus m-r-10"></i>Create User</a>
+      </div>
 
       <div class="col-md-12 m-t-10">
             <div class="panel panel-primary">

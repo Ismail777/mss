@@ -2,9 +2,7 @@
 
 @section('content')
 
-
-      <div class="row  m-t-10">
-
+      <div class="row m-t-10">
         <section class="content-header">
           <h1 class="col-md-4">Manage Roles</h1>
           <div class="pull-right col-md-4">
@@ -15,7 +13,6 @@
 
       <div class="row">
         <a href="{{route('roles.create')}}" class="btn btn-primary pull-right btn-lg"><i class="fa fa-user-secret m-r-10"></i> Create New Role</a>
-
 
       <div class="col-md-12 m-t-20">
         <div class="box box-primary">

@@ -1,6 +1,7 @@
 @extends ('layouts.app')
-
-
+<head>
+  <title>MSS | Create Permission</title>
+</head>
 @section ('content')
 
     <div class="row  m-t-10">
