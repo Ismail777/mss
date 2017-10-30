@@ -15,10 +15,11 @@
         <a href="{{route('roles.create')}}" class="btn btn-primary pull-right btn-lg"><i class="fa fa-user-secret m-r-10"></i> Create New Role</a>
 
       <div class="col-md-12 m-t-20">
+
+
+      <div class="col-md-12 m-t-5">
+
         <div class="box box-primary">
-          <div class="box-header">
-          <h3 class="box-title"></h3>
-          </div>
           <div class="box-body">
             @foreach ($roles as $role)
               <div class="col-xs-6 col-lg-4">

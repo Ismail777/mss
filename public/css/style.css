@@ -4599,6 +4599,7 @@ ul.tagit.inverse li.tagit-choice .tagit-close:focus .ui-icon-close:before {
     color: #ccc;
     width: 450px;
     margin: 168px auto;
+    margin-left: 260px;
     position: relative;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
