@@ -24,7 +24,7 @@
                 <h3 class="panel-title">All Users</h3>
               </div>
               <div class="panel-body">
-                <table class="table table-striped">
+                <table class="table table-striped table-condensed">
                     <thead>
                         <tr>
                             <th>#</th>

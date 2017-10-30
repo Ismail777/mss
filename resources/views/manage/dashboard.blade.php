@@ -8,6 +8,9 @@
     <li class="active">Dashboard</li>
   </ol>
 
+  <hr>
+
+  @role('superadministrator')
   <!-- Small boxes (Stat box) -->
   <div class="row m-t-50 m-b-20">
     <div class="col-lg-3 col-xs-6">
@@ -71,6 +74,8 @@
     </div>
     <!-- ./col -->
   </div>
+
+  @endrole
                     <div class="row">
                         <div class="col-md-4">
                           <div class="panel panel-primary">
