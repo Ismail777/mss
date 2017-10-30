@@ -20,11 +20,11 @@
       @yield('styles')
 </head>
 <body class="skin-purple sidebar-mini">
-    <div id="app">
+    <div id="app" class="wrapper">
       @include('_includes.nav.topnav')
       @include('_includes.nav.sidebar_new')
-
-      <div class="container" >
+    <div class="content-wrapper">
+      <div class="content" style="padding: 10px 10px;">
         @include ('_includes._messeges')
         @yield('content')
       </div>

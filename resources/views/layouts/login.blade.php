@@ -15,11 +15,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
       @yield('styles')
 </head>
-<body>
-    <div id="app">
-
+<body style="background-image: url('{{asset('img/login-bg/bg-7.jpg')}}">
         @yield('content')
-    </div>
 
     <!-- Scripts -->
     <script src="{{asset('js/app.js') }}"></script>

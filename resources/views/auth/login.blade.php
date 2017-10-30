@@ -2,27 +2,17 @@
 
 @section('content')
 
-  <div class="login-cover">
-      <div class="login-cover-image"><img src="{{asset('/img/login-bg/bg-7.jpg')}}" data-id="login-cover-image" alt="" /></div>
-      <div class="login-cover-bg"></div>
-  </div>
+
 
   <!-- begin #page-container -->
-  <div id="page-container" class="container" style="height: 400px;">
-
-
+  <div id="page-container" class="fade in"></div>
 
       <!-- begin login -->
         <div class="login login-v2" data-pageload-addclass="animated flipInX">
             <!-- begin brand -->
-
-
-            <div class="login-header" style="margin-left: -250px;">
-
+            <div class="login-header">
                   <img src="{{asset('img/logo.png')}}" alt="logo" width="400">
-
             </div>
-
             <!-- end brand -->
             <div class="login-content" style="margin-top: 50px;">
 

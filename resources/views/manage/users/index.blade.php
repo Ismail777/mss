@@ -5,7 +5,6 @@
 @section('content')
 
     <div class="row  m-t-10">
-
       <section class="content-header">
         <h1 class="col-md-4">Manage Users</h1>
         <div class="pull-right col-md-4">
@@ -15,11 +14,12 @@
     </div>
 
     <div class="row">
-
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <a href="{{route('users.create')}}" class="btn btn-primary btn-lg pull-right"><i class="fa fa-user-plus m-r-10"></i>Create User</a>
       </div>
+    </div>
 
+      <div class="row">
       <div class="col-md-12 m-t-10">
             <div class="panel panel-primary">
               <div class="panel-heading">
@@ -51,7 +51,8 @@
               </div>
             </div>
       </div>
-    </div>
+      </div>
+  
     {{$users->links()}}
 
 @endsection
