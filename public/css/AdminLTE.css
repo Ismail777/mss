@@ -460,8 +460,7 @@ a:focus {
 }
 .sidebar {
   padding-bottom: 10px;
-  height: 1350px;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .sidebar-form input:focus {
   border-color: transparent;
@@ -1572,6 +1571,7 @@ a:focus {
 }
 .small-box h3,
 .small-box p {
+  color: white;
   z-index: 5;
 }
 .small-box .icon {
@@ -5154,6 +5154,13 @@ table.text-center th {
 .label-warning,
 .modal-warning .modal-body {
   background-color: #f39c12 !important;
+}
+.bg-pink,
+.callout.callout-warning,
+.alert-warning,
+.label-warning,
+.modal-warning .modal-body {
+  background-color: rgb(245, 28, 165) !important;
 }
 .bg-aqua,
 .callout.callout-info,

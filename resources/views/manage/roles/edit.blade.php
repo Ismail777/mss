@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+<head>
+  <title>MSS | Edit Role {{$role->id}}</title>
+</head>
 @section('content')
 
     <div class="row m-t-10">

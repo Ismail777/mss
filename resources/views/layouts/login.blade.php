@@ -11,13 +11,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
       @yield('styles')
 </head>
-<body style="background-image: url('{{asset('img/login-bg/bg-7.jpg')}}">
+<body>
         @yield('content')
-
     <!-- Scripts -->
     <script src="{{asset('js/app.js') }}"></script>
       @yield('scripts')

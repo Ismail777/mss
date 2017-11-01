@@ -15,7 +15,8 @@
     </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col-md-8 col-md-offset-1">
+
         <form action="{{route('permissions.store')}}" method="POST">
           {{csrf_field()}}
 

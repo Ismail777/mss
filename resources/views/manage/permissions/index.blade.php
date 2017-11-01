@@ -16,33 +16,37 @@
 
   <div class="row">
         <a href="{{route('permissions.create')}}" class="btn btn-primary btn-lg pull-right"><i class="fa fa-toggle-on m-r-10"></i>Create Permissions</a>
-
+  </div>
+  <div class="row">
       <div class="col-md-12 m-t-10">
-            <div class="panel panel-danger">
+            <div class="panel panel-pink">
               <div class="panel-heading">
                 <h3 class="panel-title">All Permissions</h3>
               </div>
               <div class="panel-body">
-                <table class="table table-condensed">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Slug</th>
-                        <th>Description</th>
-                        <th>    </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      @foreach ($permissions as $permission)
-                      <tr>
-                        <td><a href="{{route('permissions.show',$permission->id)}}"><b>{{$permission->display_name}}</b></a></td>
-                        <td>{{$permission->name}}</td>
-                        <td>{{$permission->description}}</td>
-                        <td><a href="{{route('permissions.edit',$permission->id)}}" class="btn btn-default">Edit</a> </td>
-                      </tr>
-                      @endforeach
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Slug</th>
+                          <th>Description</th>
+                          <th>    </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @foreach ($permissions as $permission)
+                        <tr>
+                          <td><a href="{{route('permissions.show',$permission->id)}}"><b>{{$permission->display_name}}</b></a></td>
+                          <td>{{$permission->name}}</td>
+                          <td>{{$permission->description}}</td>
+                          <td><a href="{{route('permissions.edit',$permission->id)}}" class="btn btn-default">Edit</a> </td>
+                        </tr>
+                        @endforeach
+                      </tbody>
+                  </table>
+                </div>
+
               </div>
             </div>
       </div>

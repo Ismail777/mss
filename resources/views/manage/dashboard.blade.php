@@ -7,7 +7,7 @@
     <li class="active">Dashboard</li>
   </ol>
 
-  <hr>
+  <hr class="m-t-0">
 
   @role('superadministrator')
   <!-- Small boxes (Stat box) -->
@@ -18,7 +18,7 @@
         <div class="inner">
           <h3>150</h3>
 
-          <p>New Orders</p>
+          <p class="p-box">New Orders</p>
         </div>
         <div class="icon">
           <i class="ion ion-bag"></i>
@@ -29,11 +29,11 @@
     <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
-      <div class="small-box bg-green">
+      <div class="small-box bg-pink">
         <div class="inner">
           <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-          <p>Bounce Rate</p>
+          <p class="p-box">Bounce Rate</p>
         </div>
         <div class="icon">
           <i class="ion ion-stats-bars"></i>
@@ -44,11 +44,11 @@
     <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
-      <div class="small-box bg-yellow">
+      <div class="small-box bg-aqua">
         <div class="inner">
           <h3>{{$users->count()}}</h3>
 
-          <p>User Registrations</p>
+          <p class="p-box">User Registrations</p>
         </div>
         <div class="icon">
           <i class="ion ion-person-add"></i>
@@ -59,11 +59,11 @@
     <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
       <!-- small box -->
-      <div class="small-box bg-red">
+      <div class="small-box bg-pink">
         <div class="inner">
           <h3>65</h3>
 
-          <p>Unique Visitors</p>
+          <p class="p-box">Unique Visitors</p>
         </div>
         <div class="icon">
           <i class="ion ion-pie-graph"></i>
@@ -77,7 +77,7 @@
   @endrole
                     <div class="row">
                         <div class="col-md-4">
-                          <div class="panel panel-primary">
+                          <div class="panel panel-pink">
                           <div class="panel-heading">
                             <h1 class="panel-title"><i class="fa fa-th-list"></i>  Profile Information</h1>
                           </div>
@@ -99,7 +99,7 @@
                           </div>
                         </div>
                         <div class="col-md-8">
-                          <div class="panel panel-primary">
+                          <div class="panel panel-pink">
                             <div class="panel-heading">
                               <h1 class="panel-title">Announcments</h1>
                             </div>

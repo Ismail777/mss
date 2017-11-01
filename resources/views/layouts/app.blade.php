@@ -8,31 +8,29 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>MSS</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/AdminLTE.css')}}">
-    <link rel="stylesheet" href="{{asset('css/skin-purple.min.css')}}">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-      @yield('styles')
+    <link href="{{ asset('bower_components/Ionicons/css/ionicons.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/AdminLTE.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/skin-black-light.css') }}" rel="stylesheet">
 </head>
-<body class="skin-purple sidebar-mini">
-    <div id="app" class="wrapper">
+<body class="skin-black-light sidebar-mini">
+    <div id="app">
       @include('_includes.nav.topnav')
       @include('_includes.nav.sidebar_new')
-    <div class="content-wrapper">
-      <div class="content" style="padding: 10px 10px;">
-        @include ('_includes._messeges')
-        @yield('content')
+      <div class="content-wrapper">
+        <div class="content" style="padding: 0px 20px 0px 20px;">
+            @include('_includes._messeges')
+            @yield('content')
+        </div>
       </div>
     </div>
-
     <!-- Scripts -->
-    <script src="{{asset('js/app.js') }}"></script>
-    <script src="{{asset('js/adminlte.min.js')}}"></script>
-      @yield('scripts')
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/adminlte.min.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>

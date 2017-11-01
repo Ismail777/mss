@@ -9,13 +9,12 @@
     </div>
     <hr class="m-t-0">
 
-    <form class="form" action="{{route('roles.store')}}" method="post">
-      {{csrf_field()}}
-
     <div class="row">
         <div class="col">
 
                 <h2 class="title">Role Details:</h2>
+                <form class="form" action="{{route('roles.store')}}" method="post">
+                  {{csrf_field()}}
 
                 <div class="form-group">
                     <label for="display_name" class="label-control">Name: (For Humans)</label>
@@ -48,13 +47,11 @@
                   </li>
                 @endforeach
               </ul>
-        <input type="hidden" name="permissions" :value="permissionsSelected">
+        <input type="hidden" name="permissions" value="permissionsSelected">
         <button name="button" class="btn btn-primary">Save Changes</button>
+        </form>
       </div>
     </div>
-    </form>
-
-
 
 @endsection
 

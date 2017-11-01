@@ -2,9 +2,9 @@
   <!-- Logo -->
   <a href="{{route('home')}}" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><img src="{{asset('img/logo_small.png')}}"  alt="sidebar logo" width="50" height="50"></span>
+    <span class="logo-mini"><img src="{{asset('img/logo-small.png')}}"  alt="sidebar logo" width="50" height="50"></span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><img src="{{asset('img/admin_logo.png')}}" class="topnav" alt="logo" width="218"></span>
+    <span class="logo-lg"><img src="{{asset('img/mss_logo.png')}}" class="topnav" alt="logo" height="50" width="200"></span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
