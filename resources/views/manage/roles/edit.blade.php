@@ -40,15 +40,15 @@
                 </div>
                   <input type="hidden" name="permissions" :value="permissionsSelected">
 
-
     <div class="row">
       <div class="col">
 
                 <h2 class="title">Permissions:</h2>
                 <ul class="list-group">
                   @foreach ($permissions as $permission)
+                    <div class="form-group">
                     <li class="list-group-item">
-                      <input type="checkbox" :value="{{$permission->id}}" v-model="permissionsSelected">
+                      <input type="checkbox" class="minimal" :value="{{$permission->id}}" v-model="permissionsSelected">
                       {{$permission->display_name}} <em>{{$permission->description}}</em>
                     </li>
                   @endforeach
@@ -66,6 +66,7 @@
 @endsection
 
 @section('scripts')
+  <script src="{{ asset('plugins/iCheck/icheck.min.js') }}"></script>
   <script>
      var app = new Vue({
        el: '#app',
@@ -73,5 +74,11 @@
          permissionsSelected: {!! $role->permissions->pluck('id') !!}
        }
      });
+     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+       checkboxClass: 'icheckbox_minimal-blue',
+       radioClass   : 'iradio_minimal-blue'
+     })
   </script>
+
+
 @endsection

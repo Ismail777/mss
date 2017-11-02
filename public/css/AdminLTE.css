@@ -194,6 +194,7 @@ a:focus {
  * ----------------------
  */
 .main-header {
+  margin-top: -20px;
   position: relative;
   max-height: 100px;
   z-index: 1030;
@@ -5169,6 +5170,10 @@ table.text-center th {
 .modal-info .modal-body {
   background-color: #00c0ef !important;
 }
+.alert-default{
+  background-color: rgb(214, 207, 215);
+}
+
 .bg-blue {
   background-color: #0073b7 !important;
 }

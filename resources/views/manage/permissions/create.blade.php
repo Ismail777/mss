@@ -22,10 +22,10 @@
 
           <div class="form-group">
             <label class="radio">
-              <input type="radio" name="permission_type" id="radio1" value="basic" v-model="permissionType"> Basic Permission
+              <input type="radio"  name="permission_type" id="radio1" value="basic" v-model="permissionType"> Basic Permission
             </label>
             <label class="radio">
-              <input type="radio" name="permission_type" id="radio2" value="crud" v-model="permissionType"> CRUD Permission
+              <input type="radio"  name="permission_type" id="radio2" value="crud" v-model="permissionType"> CRUD Permission
             </label>
           </div>
 
@@ -117,5 +117,6 @@
           }
         }
       });
+
     </script>
   @endsection

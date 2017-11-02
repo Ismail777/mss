@@ -1,6 +1,6 @@
 @if (Session::has ('success'))
 
-<div class="alert alert-info" role="alert">
+<div class="alert alert-default" role="alert">
 
 <strong> Success! </strong> {{Session::get('success')}}
 
