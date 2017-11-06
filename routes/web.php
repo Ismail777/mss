@@ -14,7 +14,7 @@
 Auth::routes();
 
 Route::redirect('/','/dashboard')->name('home');
-Route::get('/dashboard', 'HomeController@index')->name('dashboard')->middleware('permission:dashboard');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
 //Manage routes
 Route::prefix('manage')->middleware('role:superadministrator|administrator')->group(function(){
@@ -29,6 +29,30 @@ Route::prefix('manage')->middleware('role:superadministrator|administrator')->gr
     Route::get('/{user}/create','ProfileController@create')->name('profile.create');
   });
 
+Route::get('/prof', function()
+{
+  return view('profile.show');
+});
+Route::get('/report-member', function()
+{
+  return view('report.member.index');
+});
+Route::get('/report-member/details', function()
+{
+  return view('report.member.show');
+});
+Route::get('/report-affiliate', function()
+{
+  return view('report.affiliate.index');
+});
+Route::get('/report-affiliate/details', function()
+{
+  return view('report.affiliate.show');
+});
+Route::get('/promo', function()
+{
+  return view('promotion.index');
+});
 
 //E-mail
 Route::get ('test-mail',function (){

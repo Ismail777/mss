@@ -10,7 +10,15 @@
         <div class="content" style="padding: 0px 20px 0px 20px;">
             @yield('content')
         </div>
+
       </div>
+      <footer class="main-footer">
+  <div class="pull-right hidden-xs">
+    <b>Version</b> 1.0
+  </div>
+  <strong>Copyright © 2017 iSynergy</a>.</strong> All rights
+  reserved.
+</footer>
     </div>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
-  <head>
-    <title>Manage Users | Edit User: {{$user->id}}</title>
-  </head>
+@section('pageTitle')
+  Edit User {{$user->id}}
+@endsection
 @section('content')
 
   <div class="row  m-t-10">
@@ -77,17 +77,8 @@
                   </div>
           </div>
         </div>
-
-
           </div> <!-- end of col -->
           </div> <!-- end of row -->
-
-
-
-
-
-
-
 @endsection
 
 @section('scripts')

@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('pageTitle')
+  Manage Roles
+@endsection
 @section('content')
 
       <div class="row m-t-10">

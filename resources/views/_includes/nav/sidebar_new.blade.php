@@ -18,22 +18,39 @@
       <li class="header">MAIN NAVIGATION</li>
 
         <li {{ Request::is('dashboard')? 'class=active':'' }}><a href="{{route('dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-        <li><a href="#"><i class="fa fa-file-pdf-o"></i><span>Report</span></a></li>
-        <li><a href="#"><i class="fa fa-cubes"></i> <span>Resource Center</span></a></li>
+        <li {{ Request::is('report*')? 'class=active':'' }} class="treeview">
+          <a href="#">
+            <i class="fa fa-bookmark"></i>
+            <span>Report</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            @role('member')
+            <li {{ Request::is('report-member')? 'class=active':'' }}><a href="{{url('report-member')}}"><i class="fa fa-circle-o"></i> Monthly Report</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Transactions</a></li>
+            @endrole
+            @role(['affiliate'])
+              <li {{ Request::is('report-affiliate')? 'class=active':'' }}><a href="{{url('report-affiliate')}}"></i>Monthly Commission Statement</a></li>
+              <li><a href="#"></i>Daily Commission Statement</a></li>
+            @endrole
+          </ul>
+        </li>
+        <li {{ Request::is('promo')? 'class=active':'' }}><a href="{{url('promo')}}"><i class="fa fa-bell"></i> <span>Promotions</span></a></li>
 
           @role(['superadministrator','administrator','affiliate'])
           {{--For Admin & Affiliate --}}
-          <li><a href="#"><i class="fa fa-male"></i> <span>Affiliate</span></a></li>
-          <li><a href="#"><i class="fa fa-male"></i> <span>Member</span></a></li>
-          <li><a href="#"><i class="fa fa-male"></i> <span>Merchant</span></a></li>
-          <li><a href="#"><i class="fa fa-mobile-phone"></i> <span>SMS</span></a></li>
-          <li><a href="#"><i class="fa fa-comments-o"></i> <span>BearinBag</span></a></li>
-
+          <li><a href="#"><i class="fa fa-male"></i> <span>Affiliate Profile</span></a></li>
+          <li><a href="#"><i class="fa fa-male"></i> <span>Members List</span></a></li>
+          <li><a href="#"><i class="fa fa-male"></i> <span>Merchants List</span></a></li>
+          <li><a href="#"><i class="fa fa-male"></i> <span>Outlets List</span></a></li>
+          <li><a href="#"><i class="fa fa-fire-extinguisher"></i> <span>Downloads Center</span></a></li>
           @endrole
 
           @role(['superadministrator','administrator','affiliate','outlet'])
         {{--For Admin, Affiliate, Merchant & Outlet --}}
-        <li><a href="#"><i class="fa fa-cubes"></i> <span>FAQ</span></a></li>
+        <li><a href="http://www.mykadshopper.com/faq/"><i class="fa fa-cubes"></i> <span>FAQ</span></a></li>
           @endrole
 
           {{--For Merchant & Outlet Only --}}

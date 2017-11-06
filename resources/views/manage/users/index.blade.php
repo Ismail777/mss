@@ -1,7 +1,7 @@
 @extends('layouts.app')
-  <head>
-    <title>Manage Users | Index</title>
-  </head>
+@section('pageTitle')
+  Manage Users
+@endsection
 @section('content')
 
     <div class="row  m-t-10">

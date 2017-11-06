@@ -1,13 +1,15 @@
 @extends('layouts.app')
-
+@section('pageTitle')
+  Edit Permission {{$permission->id}}
+@endsection
 @section('content')
 
   <div class="row  m-t-10">
     <div class="pull-right">
       {{ Breadcrumbs::render('permission', $permission) }}
     </div>
-    <div class="column col-md-8">
-      <h1 class="title">Edit Permissions Details</h1>
+    <div class="content-header">
+      <h1>Edit Permissions Details</h1>
     </div>
   </div>
   <hr>

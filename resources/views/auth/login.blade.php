@@ -24,7 +24,7 @@
             <div class="panel panel-default transparent">
               <img src="{{asset('img/lg-icon.png')}}" alt="lg-icon" height="130" class="center image-responsive">
               <div class="panel-heading">
-                <h2 class="text-center">MyKad Smart Shopper</h2>
+                <h2 class="text-center">Welcome To MSS</h2>
               </div>
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">

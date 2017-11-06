@@ -14,10 +14,10 @@
   border-right: 1px solid #d2d6de;
 }
 .skin-black-light .main-header .navbar {
-  background-color: rgb(230,0,139);
+  background-color: white;
 }
 .skin-black-light .main-header .navbar .nav > li > a {
-  color: white;
+  color: rgb(230,0,139);
   font-weight: bold;
 }
 .skin-black-light .main-header .navbar .nav > li > a:hover,
@@ -38,7 +38,7 @@
   background: #ffffff;
 }
 .skin-black-light .main-header .navbar > .sidebar-toggle {
-  color: white;
+  color: rgb(230,0,139);
   border-right: 1px solid #d2d6de;
 }
 .skin-black-light .main-header .navbar .navbar-nav > li > a {
@@ -94,16 +94,16 @@
   transition: border-left-color 0.3s ease;
 }
 .skin-black-light .sidebar-menu > li.header {
-  color: black;
+  color: rgb(101,44,144);
   background: #f9fafc;
 }
 .skin-black-light .sidebar-menu > li > a {
   border-left: 3px solid transparent;
-  font-weight: 600;
+  /*font-weight: 600; */
 }
 .skin-black-light .sidebar-menu > li:hover > a,
 .skin-black-light .sidebar-menu > li.active > a {
-  color: black;
+  color: rgb(101,44,144);
   background: #f4f4f5;
 }
 .skin-black-light .sidebar-menu > li.active {
@@ -126,7 +126,7 @@
 }
 .skin-black-light .sidebar-menu .treeview-menu > li.active > a,
 .skin-black-light .sidebar-menu .treeview-menu > li > a:hover {
-  color: #000000;
+  color: rgb(101,44,144);
 }
 .skin-black-light .sidebar-menu .treeview-menu > li.active > a {
   font-weight: 600;

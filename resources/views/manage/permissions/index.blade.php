@@ -1,7 +1,7 @@
 @extends('layouts.app')
-  <head>
-    <title>Manage Permissions | Index</title>
-  </head>
+@section('pageTitle')
+  Manage Permissions
+@endsection
 @section('content')
 
   <div class="row  m-t-10">

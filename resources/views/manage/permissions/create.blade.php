@@ -1,14 +1,14 @@
 @extends ('layouts.app')
-<head>
-  <title>MSS | Create Permission</title>
-</head>
+@section('pageTitle')
+  Create Permission
+@endsection
 @section ('content')
 
     <div class="row  m-t-10">
       <div class="pull-right">
         {{ Breadcrumbs::render('permissions') }}
       </div>
-      <div class="col-md-6 col-offset-2">
+      <div class="content-header">
         <h1>Create Permission</h1>
       </div>
       <hr class="m-t-0">

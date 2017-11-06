@@ -1,9 +1,19 @@
+.content-header h1{
+  font-family: 'Raleway', sans-serif;
+}
+#app{
+  background-color: rgb(236, 209, 229);
+}
 li.bold {
   font-weight: bold;
 }
 
 button.btn {
   font-weight: bold !important;
+}
+
+.white{
+  background-color: white;
 }
 
 a.btn {

@@ -59,7 +59,7 @@ class ProfileController extends Controller
         $profile->country = $request->country;
         $profile->state = $request->state;
         $profile->district = $request->district;
-        $profile->pp = $request->pp
+        $profile->pp = $request->pp;
 
         $profile->save();
 

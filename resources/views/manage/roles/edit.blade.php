@@ -1,15 +1,15 @@
 @extends('layouts.app')
-<head>
-  <title>MSS | Edit Role {{$role->id}}</title>
-</head>
+@section('pageTitle')
+  Edit Role {{$role->id}}
+@endsection
 @section('content')
 
     <div class="row m-t-10">
       <div class="pull-right">
         {{ Breadcrumbs::render('role', $role) }}
       </div>
-      <div class="col">
-        <h1 class="title">Edit {{$role->display_name}}</h1>
+      <div class="content-header">
+        <h1>Edit {{$role->display_name}}</h1>
         <h5>{{$role->description}}</h5>
       </div>
     </div>
@@ -66,7 +66,6 @@
 @endsection
 
 @section('scripts')
-  <script src="{{ asset('plugins/iCheck/icheck.min.js') }}"></script>
   <script>
      var app = new Vue({
        el: '#app',
@@ -74,10 +73,6 @@
          permissionsSelected: {!! $role->permissions->pluck('id') !!}
        }
      });
-     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-       checkboxClass: 'icheckbox_minimal-blue',
-       radioClass   : 'iradio_minimal-blue'
-     })
   </script>
 
 

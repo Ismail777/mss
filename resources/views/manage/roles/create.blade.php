@@ -1,18 +1,18 @@
 @extends('layouts.app')
-
+@section('pageTitle')
+  Create Role
+@endsection
 @section('content')
+<div class="content-header">
+  <h1>Create A New Role</h1>
+</div>
 
-    <div class="row m-t-10">
-      <div class="col-md-6">
-        <h1 class="title">Create A New Role</h1>
-      </div>
-    </div>
     <hr class="m-t-0">
 
     <div class="row">
-        <div class="col">
+        <div class="col col-md-6">
 
-                <h2 class="title">Role Details:</h2>
+                <h2>Role Details:</h2>
                 <form class="form" action="{{route('roles.store')}}" method="post">
                   {{csrf_field()}}
 
@@ -35,7 +35,7 @@
             </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col col-md-6">
           <h2 class="title">Permissions:</h2>
               <ul class="list-group">
                 @foreach ($permissions as $permission)

@@ -1,7 +1,6 @@
 @if (Session::has ('success'))
-
-<div class="alert alert-default" role="alert">
-
+<div class="alert alert-default alert-dismissible" role="alert">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 <strong> Success! </strong> {{Session::get('success')}}
 
 

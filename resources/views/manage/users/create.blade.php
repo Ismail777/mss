@@ -1,14 +1,14 @@
 @extends('layouts.app')
-  <head>
-    <title>Manage Users | Create User</title>
-  </head>
+@section('pageTitle')
+  Create User
+@endsection
 @section('content')
 
 
       <div class="row  m-t-10">
 
         <section class="content-header">
-          <h1 class="col-md-4">Create User</h1>
+          <h1>Create User</h1>
           <div class="pull-right col-md-4">
             {{ Breadcrumbs::render('users') }}
           </div>

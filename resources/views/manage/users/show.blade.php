@@ -1,7 +1,7 @@
 @extends('layouts.app')
-  <head>
-    <title>Manage Users | {{$user->id}}</title>
-  </head>
+@section('pageTitle')
+  User {{$user->id}}
+@endsection
 @section('content')
   <div class="pull-right">
     {{ Breadcrumbs::render('user', $user) }}

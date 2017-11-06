@@ -1,13 +1,13 @@
 @extends('layouts.app')
-<head>
-  <title>MSS | Dashboard</title>
-</head>
+@section('pageTitle')
+  Dashboard
+@endsection
 @section('content')
-  <ol class="breadcrumb pull-right">
-    <li class="active">Dashboard</li>
-  </ol>
-
-  <hr class="m-t-0">
+  <div class="row  m-t-10">
+    <div class="pull-right">
+      {{ Breadcrumbs::render('home') }}
+    </div>
+  </div>
 
   @role('superadministrator')
   <!-- Small boxes (Stat box) -->
@@ -75,30 +75,24 @@
   </div>
 
   @endrole
-                    <div class="row">
-                        <div class="col-md-4">
-                          <div class="panel panel-pink">
-                          <div class="panel-heading">
-                            <h1 class="panel-title"><i class="fa fa-th-list"></i>  Profile Information</h1>
-                          </div>
-                          <div class="panel-body">
-                            <ul class="list-group">
-                                  <li class="list-group-item">User Role: Admin</li >
-                                  <li class="list-group-item">Name: Mohamed Ismail Rashad</li >
+    <div class="row">
+                          <div class="col-md-8">
+                            <div class="panel panel-pink">
+                            <div class="panel-heading">
+                              <h1 class="panel-title"><i class="fa fa-th-list"></i>Profile Information</h1>
+                            </div>
+                            <div class="panel-body">
+                              <img src="{{asset('img/qr.png')}}" alt="qr" class="image-responsive">
+                              <ul class="list-group">
+                                    <li class="list-group-item">User Role: Admin</li >
+                                    <li class="list-group-item">Name: Mohamed Ismail Rashad</li >
                                   <li class="list-group-item">Identity Card Number: P022223334</li >
-                                  <li class="list-group-item">Gender: Male</li >
-                                  <li class="list-group-item">Email: mismail220@gmail.com</li >
-                                  <li class="list-group-item">Mobile Phone Number: 01139854339</li >
-                                  <li class="list-group-item">Office Telephone Number: 01139854339</li >
-                                  <li class="list-group-item">Home Telephone number: 01139854339</li >
-                                  <li class="list-group-item">Country: Sudan</li >
-                                  <li class="list-group-item">State: Khartoum</li >
-                                  <li class="list-group-item">District: 21</li >
                             </ul>
                           </div>
                           </div>
+
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-4">
                           <div class="panel panel-pink">
                             <div class="panel-heading">
                               <h1 class="panel-title">Announcments</h1>

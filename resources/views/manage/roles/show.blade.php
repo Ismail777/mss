@@ -1,13 +1,15 @@
 @extends('layouts.app')
-
+@section('pageTitle')
+  Role {{$role->display_name}}
+@endsection
 @section('content')
 
     <div class="row m-t-10">
       <div class="pull-right">
         {{ Breadcrumbs::render('role', $role) }}
       </div>
-      <div class="col">
-        <h1 class="title">{{$role->display_name}}<small class="m-l-25"><em>({{$role->name}})</em></small></h1>
+      <div class="content-header">
+        <h1>{{$role->display_name}}<small class="m-l-25"><em>({{$role->name}})</em></small></h1>
         <h5>{{$role->description}}</h5>
       </div>
       <div class="col">
