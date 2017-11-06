@@ -41,7 +41,7 @@
                   <input type="hidden" name="permissions" :value="permissionsSelected">
 
     <div class="row">
-      <div class="col">
+      <div class="col-md-8">
 
                 <h2 class="title">Permissions:</h2>
                 <ul class="list-group">

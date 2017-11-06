@@ -90,3 +90,4 @@
   </section>
   <!-- /.sidebar -->
 </aside>
+<div class="control-sidebar-bg"></div>
